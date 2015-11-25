@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ih7-oH-oTh"/>
+                        <viewControllerLayoutGuide type="bottom" id="HbC-7B-Rfi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1p2-u8-Llo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_background" translatesAutoresizingMaskIntoConstraints="NO" id="n2l-Bd-dbH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_logo" translatesAutoresizingMaskIntoConstraints="NO" id="l7D-Vb-ljJ">
+                                <rect key="frame" x="236" y="236" width="128" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="QJZ-1A-EhA"/>
+                                    <constraint firstAttribute="width" constant="128" id="m2y-3B-H01"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Best News from Georgia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNk-TA-hEa">
+                                <rect key="frame" x="187" y="372" width="226" height="31"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="dCi-0p-YNG"/>
+                                    <constraint firstAttribute="width" constant="226" id="yDY-gU-KR2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CNk-TA-hEa" firstAttribute="top" secondItem="l7D-Vb-ljJ" secondAttribute="bottom" constant="8" symbolic="YES" id="819-Rk-sDN"/>
+                            <constraint firstItem="n2l-Bd-dbH" firstAttribute="leading" secondItem="1p2-u8-Llo" secondAttribute="leading" id="Pu6-OG-JUq"/>
+                            <constraint firstItem="n2l-Bd-dbH" firstAttribute="centerY" secondItem="l7D-Vb-ljJ" secondAttribute="centerY" id="Uhr-SN-vAQ"/>
+                            <constraint firstItem="n2l-Bd-dbH" firstAttribute="top" secondItem="1p2-u8-Llo" secondAttribute="top" id="ZbF-Tx-5c7"/>
+                            <constraint firstItem="l7D-Vb-ljJ" firstAttribute="centerX" secondItem="CNk-TA-hEa" secondAttribute="centerX" id="a4V-xs-9p6"/>
+                            <constraint firstAttribute="trailing" secondItem="n2l-Bd-dbH" secondAttribute="trailing" id="ems-NT-H2C"/>
+                            <constraint firstAttribute="bottom" secondItem="n2l-Bd-dbH" secondAttribute="bottom" id="kv3-bH-BGt"/>
+                            <constraint firstItem="CNk-TA-hEa" firstAttribute="centerX" secondItem="n2l-Bd-dbH" secondAttribute="centerX" id="leH-lI-jE0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="67" y="141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch_background" width="1565" height="2253"/>
+        <image name="launch_logo" width="158" height="163"/>
+    </resources>
+</document>
